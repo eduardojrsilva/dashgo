@@ -8,7 +8,7 @@ interface InputProps extends ChakraInputProps {
 export function Input({ name, label, ...rest }: InputProps) {
   return (
     <FormControl>
-      { !!label && <FormLabel htmlFor="email">E-mail</FormLabel> }
+      { !!label && <FormLabel htmlFor="email">{label}</FormLabel> }
       <ChakraInput
         name="email"
         id="email"
