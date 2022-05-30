@@ -42,7 +42,11 @@ export function Pagination({
       align="center"
     >
       <Box>
-        <strong>0</strong> - <strong>10</strong> de <strong>100</strong>
+        <strong>{registersPerPage * currentPage - registersPerPage + 1}</strong>
+        {` - `}
+        <strong>{registersPerPage * currentPage}</strong>
+        {` de `}
+        <strong>{totalCountOfRegisters}</strong>
       </Box>
 
       <Stack direction="row" spacing="2">
